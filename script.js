@@ -1,5 +1,6 @@
 const body = document.getElementById('body');
 const header = document.getElementById('header');
+const footer = document.getElementById('footer');
 const imgs = document.getElementsByTagName('img');
 const snowWhite = '#F3F6FB';
 const charcoalBlack = '#212121';
@@ -11,6 +12,7 @@ if (
   body.style.backgroundColor = snowWhite;
   body.style.color = snowWhite;
   header.style.background = charcoalBlack;
+  footer.style.background = charcoalBlack;
 } else if (
   window.matchMedia &&
   window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -18,6 +20,7 @@ if (
   body.style.backgroundColor = charcoalBlack;
   body.style.color = charcoalBlack;
   header.style.background = snowWhite;
+  footer.style.background = snowWhite;
 }
 
 for (let img of imgs) {
