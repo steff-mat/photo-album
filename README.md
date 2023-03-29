@@ -1,23 +1,28 @@
 # photo-album
 
-Functionality:
+⭐️ Functionality:
 
-- Light/Dark Mode:
+    - Light/Dark Mode:
+        - Function based on user system setting, no manual toggle required.
 
-  - Function based on user system setting, no manual toggle required.
+    - IMG auto-grid and auto-resize:
+        - Scale IMG's based on user screen size.
 
-- IMG auto-grid and auto-resize:
+    - Click to expand:
+        - Click on IMG to expand to full-width of user device.
 
-  - Scale IMG's based on user screen size.
+🥺 To add later:
 
-- Click to expand:
-  - Click on IMG to expand to full-width of user device.
+    + Rotation toggle:
+        + Rotate IMG on mobile even if auto-rotation is off.
 
-To add later:
+    + Light/Dark toggle:
+        + Implement light/dark mode toggle.
 
-- Rotation toggle:
+    + View on bigger screen notification.
+        + Add notification when opening IMG's to advise user to watch content via bigger screen for better user experience.
 
-  - Rotate IMG on mobile even if auto-rotation is off.
+🪳 Known bugs:
 
-- Light/Dark toggle:
-  - Implement light/dark mode toggle.
+    * All IMG's can be open one after another.
+        * Add blackish overlay and z-index to limit click functionality.
