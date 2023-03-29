@@ -5,16 +5,20 @@ const imgs = document.getElementsByClassName('img');
 const switcher = document.getElementById('switcher');
 const light = document.getElementById('light');
 const dark = document.getElementById('dark');
+const nameTag = document.getElementById('name');
 const snowWhite = '#F3F6FB';
 const charcoalBlack = '#212121';
+const cheeseOrange = 'rgba(255, 166, 0, 0.7)';
+const boeingBlue = 'rgba(0,57,166, 0.7)';
+const nardoGray = '#686A6C';
 
 function day() {
   body.style.backgroundColor = snowWhite;
   body.style.color = snowWhite;
   header.style.background = charcoalBlack;
   footer.style.background = charcoalBlack;
-  light.style.backgroundColor = 'rgba(255, 255, 0, 0.7)';
-  dark.style.backgroundColor = 'gray';
+  light.style.backgroundColor = cheeseOrange;
+  dark.style.backgroundColor = nardoGray;
 }
 
 function night() {
@@ -22,8 +26,8 @@ function night() {
   body.style.color = charcoalBlack;
   header.style.background = snowWhite;
   footer.style.background = snowWhite;
-  light.style.backgroundColor = 'gray';
-  dark.style.backgroundColor = 'rgba(0, 0, 255, 0.7)';
+  light.style.backgroundColor = nardoGray;
+  dark.style.backgroundColor = boeingBlue;
 }
 
 if (
@@ -47,7 +51,11 @@ for (let img of imgs) {
 }
 
 switcher.addEventListener('click', () => {
-  if (light.style.backgroundColor === 'rgba(255, 255, 0, 0.7)') {
+  if (light.style.backgroundColor === cheeseOrange) {
     night();
-  } else day();
+    nameTag.style.color = boeingBlue;
+  } else {
+    day();
+    nameTag.style.color = cheeseOrange;
+  }
 });
