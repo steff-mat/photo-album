@@ -1,4 +1,4 @@
-# photo-album
+# Photo-album
 
 ⭐️ Functionality:
 
