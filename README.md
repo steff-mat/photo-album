@@ -11,13 +11,13 @@
     - Click to expand:
         - Click on IMG to expand to full-width of user device.
 
+    🆕 Light/Dark toggle:
+        - Implement light/dark mode toggle.
+
 🥺 To add later:
 
     + Rotation toggle:
         + Rotate IMG on mobile even if auto-rotation is off.
-
-    + Light/Dark toggle:
-        + Implement light/dark mode toggle.
 
     + View on bigger screen notification.
         + Add notification when opening IMG's to advise user to watch content via bigger screen for better user experience.
