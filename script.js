@@ -1,4 +1,5 @@
 const body = document.getElementById('body');
+const main = document.getElementById('main');
 const header = document.getElementById('header');
 const footer = document.getElementById('footer');
 const imgs = document.getElementsByClassName('img');
@@ -43,10 +44,30 @@ if (
 }
 
 for (let img of imgs) {
-  if (img.classList.contains('full-screen') === false) {
-    img.addEventListener('click', () => {
-      img.classList.toggle('full-screen');
-    });
+  switch (img.classList.contains('full-screen')) {
+    case false:
+      img.addEventListener('click', () => {
+        const overlay = document.createElement('div');
+        const fullScreen = document.createElement('img');
+        if (document.querySelectorAll('.full-screen').length < 1) {
+          main.appendChild(overlay);
+          main.appendChild(fullScreen);
+          overlay.classList.add('overlay');
+          fullScreen.classList.add('img');
+          fullScreen.src = img.getAttribute('src');
+          fullScreen.classList.toggle('full-screen');
+          fullScreen.addEventListener('click', () => {
+            fullScreen.remove();
+            overlay.remove();
+          });
+        }
+        console.log('click');
+        document.querySelectorAll('.full-screen').length;
+      });
+      break;
+    case true:
+      location.reload();
+      break;
   }
 }
 
