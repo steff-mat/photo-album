@@ -23,6 +23,3 @@
         + Add notification when opening IMG's to advise user to watch content via bigger screen for better user experience.
 
 🪳 Known bugs:
-
-    * All IMG's can be open one after another.
-        * Add blackish overlay and z-index to limit click functionality.
